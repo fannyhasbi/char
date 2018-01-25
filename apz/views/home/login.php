@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Imperial Boootstrap Template</title>
+  <title>Sign in Metaflorist</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <!-- Google Fonts -->
@@ -14,20 +14,13 @@
 
   <!-- Main Stylesheet File -->
   <link href="<?= base_url(); ?>assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-    Theme Name: Imperial
-    Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
 </head>
 <body>
   <section id="contact">
-    <div class="container wow fadeInUp">
+    <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">Sign Up</h3>
+          <h3 class="section-title">Sign In <a href="<?= site_url(); ?>">Charity</a></h3>
           <div class="section-title-divider"></div>
           <p class="section-description">Belum punya akun? Silahkan daftar <a href="<?= site_url('signup'); ?>">disini</a></p>
         </div>

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Imperial Boootstrap Template</title>
+  <title>Metaflorist</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -37,26 +37,16 @@
 
   <!-- Main Stylesheet File -->
   <link href="<?= base_url(); ?>assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-    Theme Name: Imperial
-    Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
 </head>
 
 <body>
   <div id="preloader"></div>
 
-  <!--==========================
-  Hero Section
-  ============================-->
   <section id="hero">
     <div class="hero-container">
       <div class="wow fadeIn">
         <div class="hero-logo">
-          <img class="" src="<?= base_url(); ?>assets/img/metaflorist.png" alt="Imperial">
+          <img class="" src="<?= base_url(); ?>assets/img/metaflorist.png" alt="Metaflorist">
         </div>
 
         <h1>Tingkatkan Percaya Diri Dengan Berbagi</h1>
@@ -71,9 +61,6 @@
     </div>
   </section>
 
-  <!--==========================
-  Header Section
-  ============================-->
   <header id="header">
     <div class="container">
 
@@ -98,9 +85,6 @@
   </header>
   <!-- #header -->
 
-  <!--==========================
-  About Section
-  ============================-->
   <section id="about">
     <div class="container wow fadeInUp">
       <div class="row">
@@ -129,9 +113,6 @@
     </div>
   </section>
 
-  <!--==========================
-  Products
-  ============================-->
   <section id="product">
     <div class="container wow fadeInUp">
       <div class="row">
@@ -221,15 +202,12 @@
       <hr>
 
       <div class="text-center">
-        <a href="#" class="text-success">LIHAT SELENGKAPNYA <i class="fa fa-sign-in"></i></a>
+        <a href="<?= site_url('products'); ?>" class="text-success">LIHAT SELENGKAPNYA <i class="fa fa-sign-in"></i></a>
       </div>
 
     </div>
   </section>
 
-  <!--==========================
-  Testimonials Section
-  ============================-->
   <section id="testimonials">
     <div class="container wow fadeInUp">
       <div class="row">
@@ -277,9 +255,6 @@
     </div>
   </section>
 
-  <!--==========================
-  Contact Section
-  ============================-->
   <section id="contact">
     <div class="container wow fadeInUp">
       <div class="row">
@@ -333,7 +308,9 @@
                 <textarea class="form-control" name="pesan" rows="5" placeholder="Pesan..."></textarea>
               </div>
               
-              <div class="text-center"><button type="submit">Kirim</button></div>
+              <div class="text-center">
+                <input type="submit" name="kirim" value="Kirim">
+              </div>
             </form>
           </div>
         </div>
@@ -342,9 +319,6 @@
     </div>
   </section>
 
-  <!--==========================
-  Footer
-============================-->
   <footer id="footer">
     <div class="container">
       <div class="row">
@@ -368,14 +342,9 @@
   <script src="<?= base_url(); ?>assets/lib/morphext/morphext.min.js"></script>
   <script src="<?= base_url(); ?>assets/lib/wow/wow.min.js"></script>
   <script src="<?= base_url(); ?>assets/lib/stickyjs/sticky.js"></script>
-  <script src="<?= base_url(); ?>assets/lib/easing/easing.js"></script>
+  <script src="<?= base_url(); ?>assets/lib/easing/easing.min.js"></script>
 
   <!-- Template Specisifc Custom Javascript File -->
   <script src="<?= base_url(); ?>assets/js/custom.js"></script>
-
-  <!-- <script src="contactform/contactform.js"></script> -->
-
-
 </body>
-
 </html>
