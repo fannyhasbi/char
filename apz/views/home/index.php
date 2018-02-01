@@ -202,7 +202,7 @@
       <hr>
 
       <div class="text-center">
-        <a href="<?= site_url('products'); ?>" class="text-success">LIHAT SELENGKAPNYA <i class="fa fa-sign-in"></i></a>
+        <a href="<?= site_url('products'); ?>" class="text-info">LIHAT SELENGKAPNYA <i class="fa fa-sign-in"></i></a>
       </div>
 
     </div>
