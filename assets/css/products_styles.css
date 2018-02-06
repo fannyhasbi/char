@@ -85,7 +85,7 @@ p a
 	display: inline;
 	position: relative;
 	color: inherit;
-	border-bottom: solid 2px #fde0db;
+	border-bottom: solid 2px #8A999E; /* fde0db */
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -102,12 +102,12 @@ a, a:hover, a:visited, a:active, a:link
 p a:active
 {
 	position: relative;
-	color: #FF6347;
+	color: #31849F;
 }
 p a:hover
 {
-	color: #FF6347;
-	background: #fde0db;
+	color: #31849F;
+	background: #8A999E;
 }
 p a:hover::after
 {
@@ -115,12 +115,12 @@ p a:hover::after
 }
 ::selection
 {
-	background: #fde0db;
-	color: #FF6347;
+	background: #8A999E;
+	color: #31849F; /* 31849F FF6347 */
 }
 p::selection
 {
-	background: #fde0db;
+	background: #8A999E;
 }
 h1{font-size: 72px;}
 h2{font-size: 40px;}
@@ -177,7 +177,7 @@ h6::selection
 }
 .form-control
 {
-	color: #db5246;
+	color: #2D7B86; /* 2D7B86 db5246 */
 }
 section
 {
@@ -621,7 +621,7 @@ section
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
-	background: #fe4c50;
+	background: #03C4EB; /* 03C4EB 3FD3CD */
 	font-size: 12px;
 	color: #FFFFFF;
 }
@@ -813,9 +813,9 @@ section
 }
 .logo_container a span
 {
-	color: #fe4c50;
+	color: #03C4EB;
 }
-.red_button
+.blue_button
 {
 	display: -webkit-inline-box;
 	display: -moz-inline-box;
@@ -827,7 +827,7 @@ section
 	align-items: center;
 	width: auto;
 	height: 40px;
-	background: #fe4c50;
+	background: #03C4EB;
 	border-radius: 3px;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -835,11 +835,11 @@ section
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
-.red_button:hover
+.blue_button:hover
 {
-	background: #FE7C7F !important;
+	background: #67D3CF !important; /* 67D3CF FE7C7F */
 }
-.red_button a
+.blue_button a
 {
 	display: block;
 	color: #FFFFFF;
@@ -886,7 +886,7 @@ section
 	transform: translateX(-50%);
 	width: 60px;
 	height: 5px;
-	background: #fe4c50;
+	background: #03C4EB;
 	content: '';
 }
 
@@ -1015,7 +1015,7 @@ section
 }
 .product_sorting_container_bottom .pages .page_current
 {
-	background: #fe4c50;
+	background: #03C4EB;
 	border: none;
 }
 .page_current span
@@ -1169,11 +1169,11 @@ section
 }
 .sidebar_categories li.active a
 {
-	color: #fe4c50;
+	color: #03C4EB;
 }
 .sidebar_categories li.active:hover a
 {
-	color: #fe4c50;
+	color: #03C4EB;
 }
 .sidebar_categories li a
 {
@@ -1233,7 +1233,7 @@ section
 }
 .checkboxes li.active i
 {
-	color: #fe4c50;
+	color: #03C4EB;
 	margin-right: 21px;
 }
 .checkboxes li.active i::after
@@ -1277,7 +1277,7 @@ section
 {
 	height: 40px;
 	line-height: 40px;
-	color: #fe4c50;
+	color: #03C4EB;
 }
 .show_more span:first-child
 {
@@ -1369,7 +1369,7 @@ section
 .product_price
 {
 	font-size: 16px;
-	color: #fe4c50;
+	color: #03C4EB;
 	font-weight: 600;
 }
 .product_price span
@@ -1417,17 +1417,17 @@ section
 	bottom: -6px;
 	border: 6px solid;
 }
-.product_bubble_red::after
+.product_bubble_blue::after
 {
-	border-color: transparent transparent transparent #fe4c50;
+	border-color: transparent transparent transparent #03C4EB;
 }
 .product_bubble_left::after
 {
 	border-color: #51a042 #51a042 transparent transparent;
 }
-.product_bubble_red
+.product_bubble_blue
 {
-	background: #fe4c50;
+	background: #03C4EB;
 }
 .product_bubble_green
 {
@@ -1491,7 +1491,7 @@ section
 {
 	font-family: 'FontAwesome';
 	content:'\f004';
-	color: #fe4c50;
+	color: #03C4EB;
 }
 .favorite::after
 {
@@ -1500,7 +1500,7 @@ section
 }
 .favorite:hover::after
 {
-	color: #fe4c50;
+	color: #03C4EB;
 }
 
 /*********************************
@@ -1535,7 +1535,7 @@ section
 .benefit_icon i
 {
 	font-size: 30px;
-	color: #fe4c50;
+	color: #03C4EB;
 }
 .benefit_content
 {
@@ -1637,7 +1637,7 @@ section
 	width: 160px;
 	height: 46px;
 	border: none;
-	background: #fe4c50;
+	background: #03C4EB;
 	color: #FFFFFF;
 	font-size: 14px;
 	font-weight: 500;
@@ -1646,7 +1646,7 @@ section
 }
 .newsletter_submit_btn:hover
 {
-	background: #FE7C7F;
+	background: #67D3CF; /* 67D3CF FE7C7F */
 }
 
 /*********************************
@@ -1684,7 +1684,7 @@ section
 }
 .footer_nav li a:hover, .cr a, .cr i
 {
-	color: #fe4c50;
+	color: #03C4EB;
 }
 .footer_social
 {
@@ -1715,5 +1715,5 @@ section
 }
 .footer_social ul li a:hover
 {
-	color: #fe4c50;
+	color: #03C4EB;
 }

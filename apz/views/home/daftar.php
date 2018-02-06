@@ -14,20 +14,13 @@
 
   <!-- Main Stylesheet File -->
   <link href="<?= base_url(); ?>assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-    Theme Name: Imperial
-    Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
 </head>
 <body>
   <section id="contact">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">Sign Up</h3>
+          <h3 class="section-title">Sign Up <a href="<?= site_url(); ?>">Metaflorist</a></h3>
           <div class="section-title-divider"></div>
           <p class="section-description">Sudah punya akun? Silahkan masuk <a href="<?= site_url('signin'); ?>">disini</a></p>
         </div>

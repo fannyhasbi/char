@@ -20,7 +20,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">Sign In <a href="<?= site_url(); ?>">Charity</a></h3>
+          <h3 class="section-title">Sign In <a href="<?= site_url(); ?>">Metaflorist</a></h3>
           <div class="section-title-divider"></div>
           <p class="section-description">Belum punya akun? Silahkan daftar <a href="<?= site_url('signup'); ?>">disini</a></p>
         </div>

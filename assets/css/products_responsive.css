@@ -24,7 +24,7 @@
 
 @media only screen and (max-width: 1600px)
 {
-	
+
 }
 
 /************
@@ -82,6 +82,19 @@
 /************
 6. 991px
 ************/
+
+@media only screen and (min-width: 991px)
+{
+	.product_image
+	{
+		width: 100%;
+	}
+	.product_image img
+	{
+		max-height: 240px;
+		width: 100%;
+	}
+}
 
 @media only screen and (max-width: 991px)
 {

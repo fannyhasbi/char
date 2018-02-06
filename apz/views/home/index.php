@@ -77,7 +77,6 @@
           <li><a href="#product">Products</a></li>
           <li><a href="#testimonials">Testimoni</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          <li><a href="<?= site_url('daftar'); ?>">Signup <i class="fa fa-sign-in"></i></a></li>
         </ul>
       </nav>
       <!-- #nav-menu-container -->
@@ -125,7 +124,7 @@
 
       <div class="row">
         <div class="col-md-3">
-          <a class="product-item" style="background-image: url(<?= base_url(); ?>assets/img/portfolio-1.jpg);" href="">
+          <a class="product-item" style="background-image: url(<?= base_url(); ?>uploads/p/1.jpg);" href="">
             <div class="details">
               <h4>Product 1</h4>
               <span>Alored dono par</span>
@@ -134,7 +133,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="product-item" style="background-image: url(<?= base_url(); ?>assets/img/portfolio-2.jpg);" href="">
+          <a class="product-item" style="background-image: url(<?= base_url(); ?>uploads/p/3.jpg);" href="">
             <div class="details">
               <h4>Product 2</h4>
               <span>Alored dono par</span>
@@ -143,7 +142,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="product-item" style="background-image: url(<?= base_url(); ?>assets/img/portfolio-3.jpg);" href="">
+          <a class="product-item" style="background-image: url(<?= base_url(); ?>uploads/p/4.jpg);" href="">
             <div class="details">
               <h4>Product 3</h4>
               <span>Alored dono par</span>
@@ -152,7 +151,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="product-item" style="background-image: url(<?= base_url(); ?>assets/img/portfolio-4.jpg);" href="">
+          <a class="product-item" style="background-image: url(<?= base_url(); ?>uploads/p/5.jpg);" href="">
             <div class="details">
               <h4>Product 4</h4>
               <span>Alored dono par</span>
@@ -161,7 +160,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="product-item" style="background-image: url(<?= base_url(); ?>assets/img/portfolio-5.jpg);" href="">
+          <a class="product-item" style="background-image: url(<?= base_url(); ?>uploads/p/6.jpg);" href="">
             <div class="details">
               <h4>Product 5</h4>
               <span>Alored dono par</span>
@@ -170,7 +169,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="product-item" style="background-image: url(<?= base_url(); ?>assets/img/portfolio-6.jpg);" href="">
+          <a class="product-item" style="background-image: url(<?= base_url(); ?>uploads/p/7.jpg);" href="">
             <div class="details">
               <h4>Product 6</h4>
               <span>Alored dono par</span>
@@ -179,7 +178,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="product-item" style="background-image: url(<?= base_url(); ?>assets/img/portfolio-7.jpg);" href="">
+          <a class="product-item" style="background-image: url(<?= base_url(); ?>uploads/p/8.jpg);" href="">
             <div class="details">
               <h4>Product 7</h4>
               <span>Alored dono par</span>
@@ -188,7 +187,7 @@
         </div>
 
         <div class="col-md-3">
-          <a class="product-item" style="background-image: url(<?= base_url(); ?>assets/img/portfolio-8.jpg);" href="">
+          <a class="product-item" style="background-image: url(<?= base_url(); ?>uploads/p/1.jpg);" href="">
             <div class="details">
               <h4>Portfolio 8</h4>
               <span>Alored dono par</span>
@@ -202,7 +201,7 @@
       <hr>
 
       <div class="text-center">
-        <a href="<?= site_url('products'); ?>" class="text-success">LIHAT SELENGKAPNYA <i class="fa fa-sign-in"></i></a>
+        <a href="<?= site_url('products'); ?>" class="text-info">LIHAT SELENGKAPNYA <i class="fa fa-sign-in"></i></a>
       </div>
 
     </div>
