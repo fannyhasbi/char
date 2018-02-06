@@ -29,13 +29,4 @@ class Home extends CI_Controller {
   public function daftar(){
     $this->load->view('home/daftar');
   }
-
-  public function login(){
-    $this->load->view('home/login');
-  }
-
-  public function products(){
-    $this->load->view('home/products');
-  }
-
 }

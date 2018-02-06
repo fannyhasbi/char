@@ -77,7 +77,6 @@
           <li><a href="#product">Products</a></li>
           <li><a href="#testimonials">Testimoni</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          <li><a href="<?= site_url('signup'); ?>">Signup <i class="fa fa-sign-in"></i></a></li>
         </ul>
       </nav>
       <!-- #nav-menu-container -->
