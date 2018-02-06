@@ -7,7 +7,8 @@ $route['signup'] = 'home/daftar';
 $route['products'] = 'produk';
 
 // Panti
-$route['signin'] = 'panti/login';
+$route['in'] = 'panti';
+$route['in/signin'] = 'panti/login';
 
 $route['default_controller'] = 'home';
 $route['404_override'] = '';
