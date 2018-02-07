@@ -2,6 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['signup'] = 'home/daftar';
+$route['signout'] = 'panti/logout';
 
 // Products
 $route['products'] = 'produk';

@@ -9,6 +9,8 @@ class Panti extends CI_Controller {
 
   public function index(){
     $this->cekLogin();
+
+    $this->load->view('panti/index_view');
   }
 
   public function cekLogin(){
@@ -49,6 +51,11 @@ class Panti extends CI_Controller {
       $data['message'] = $this->session->flashdata('msg');
       $this->load->view('panti/login', $data);
     }
+  }
+
+  public function logout(){
+    $this->session->sess_destroy();
+    redirect(site_url('products'));
   }
 
 }
