@@ -2,11 +2,23 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Panti_model extends CI_Model {
+  public function __construct(){
+    date_default_timezone_set('Asia/Jakarta');
+  }
+
   private function purify($r){
     $r = htmlspecialchars($r);
     $r = stripslashes($r);
     $r = trim($r);
 
+    return $r;
+  }
+
+  private function generateSlug($nama_produk){
+    $r = $this->purify($nama_produk);
+    $r = strtolower($r);
+    $r = str_replace(" ", "-", $r);
+    $r = substr($r, 0, 30);
     return $r;
   }
   
@@ -16,6 +28,35 @@ class Panti_model extends CI_Model {
     );
 
     return $this->db->get_where('panti', $data);
+  }
+
+  public function checkFoto($alamat_foto){
+    $foto = $this->db->get_where('produk', ['foto' => $alamat_foto])->row();
+
+    $foto = explode(".", $foto);
+    $foto = $foto[0];
+
+    if($foto == $alamat_foto)
+      return true;
+    else
+      return false;
+  }
+
+  public function addProduk($alamat_foto){
+    $deskripsi = str_replace("\n", "<br>", $this->input->post('deskripsi_produk'));
+    $slug = $this->generateSlug($this->input->post('nama_produk'));
+
+    $data = array(
+      'nama' => $this->purify($this->input->post('nama_produk')),
+      'harga' => (float)$this->input->post('harga_produk'),
+      'desk' => $deskripsi,
+      'pemilik' => $this->session->userdata('id_panti'),
+      'ditambah' => date('Y-m-d'),
+      'foto' => $alamat_foto,
+      'slug' => $slug
+    );
+
+    $this->db->insert('produk', $data);
   }
 
   public function getPanti(){

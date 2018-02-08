@@ -18,6 +18,16 @@ class Panti extends CI_Controller {
       redirect(site_url('in/signin'));
   }
 
+  public function generateAlamatFoto(){
+    $foto = "";
+    $n = "1234567890abcdefghijklmnopqrstuvwxyz_";
+    for($i=0;$i<8;$i++){
+      $foto .= $n[rand(0, strlen($n) - 1)];
+    }
+
+    return 'mfproduct_'.$foto;
+  }
+
   public function login(){
     if($this->session->userdata('login_panti'))
       redirect(site_url('in'));
@@ -64,4 +74,39 @@ class Panti extends CI_Controller {
     $data['view_name'] = 'produk';
     $this->load->view('panti/index_view', $data);
   }
+
+  public function tambah_produK(){
+    if($this->input->post('tambah_produk')){
+      $foto = $this->generateAlamatFoto();
+
+      // jika alamat foto sudah ada di db
+      while($this->panti_model->checkFoto($foto)){
+        $foto = $this->generateAlamatFoto();
+      }
+
+      $config['upload_path']   = './uploads/p/';
+      $config['file_name']     = $foto;
+      $config['allowed_types'] = 'jpg|png';
+      $config['max_size']      = 600;
+
+      $this->load->library('upload', $config);
+
+      if ( ! $this->upload->do_upload('foto_produk')){
+        echo $this->upload->display_errors();
+        die();
+      }
+      else {
+        // jika berhasil
+        $data = $this->upload->data();
+        $this->panti_model->addProduk($data['file_name']);
+      }
+
+      redirect(site_url('in/produk'));
+    }
+    else {
+      $data['view_name'] = 'tambah_produk';
+      $this->load->view('panti/index_view', $data);
+    }
+  }
+
 }
