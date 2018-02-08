@@ -9,7 +9,7 @@
         <a href="<?= site_url('in/tambah-produk'); ?>" class="btn btn-info"><i class="fa fa-plus"></i> Tambah</a><br><br>
         <div class="clearfix"></div>
 
-        <table id="produk" class="table table-bordered table-hover">
+        <table id="datatable" class="table table-bordered table-hover">
           <thead>
             <tr>
               <th>No.</th>
@@ -25,8 +25,10 @@
                 <td><?= $item->nama; ?></td>
                 <td><?= number_format($item->harga, 0, ',', '.'); ?></td>
                 <td>
-                  <a href="<?= site_url('in/edit-produk/'.$item->id); ?>" class="btn btn-default" title="Edit"><i class="fa fa-edit"></i></a>
-                  <a href="#" class="btn btn-danger" title="Hapus"><i class="fa fa-trash"></i></a>
+                  <div class="btn-group">
+                    <a href="<?= site_url('in/edit-produk/'.$item->id); ?>" class="btn btn-default" title="Edit"><i class="fa fa-edit"></i></a>
+                    <a href="#" class="btn btn-danger" title="Hapus"><i class="fa fa-trash"></i></a>
+                  </div>
                 </td>
               </tr>
             <?php $i++; endforeach; ?>

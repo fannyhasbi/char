@@ -109,14 +109,30 @@
 <script src="<?= base_url(); ?>assets/lib/fastclick/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="<?= base_url(); ?>assets/lib/adminlte/js/app.min.js"></script>
+<!-- Sweet Alert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <script>
 $(function (){
   var x = (window.innerWidth > 768) ? false : true;
-  $("#produk").DataTable({
+  $("#datatable").DataTable({
       "scrollX": x,
       "pagingType": "numbers"
   });
+
+  const message = "<?= isset($message) ? $message : null ?>";
+  const type = "<?= isset($type) ? $type : null ?>";
+  var title;
+
+  switch(type){
+    case "success": title = "Berhasil"; break;
+    case "error"  : title = "Terjadi kesalahan"; break;
+    case "info"   : title = "Oops"; break;
+  }
+
+  if(message.length > 0){
+    swal(title, message, type);
+  }
 });
 </script>
 </body>

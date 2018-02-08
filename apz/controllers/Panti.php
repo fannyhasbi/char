@@ -74,6 +74,8 @@ class Panti extends CI_Controller {
     $data['produk'] = $this->panti_model->getProduk();
 
     $data['view_name'] = 'produk';
+    $data['message'] = $this->session->flashdata('msg');
+    $data['type'] = $this->session->flashdata('type');
     $this->load->view('panti/index_view', $data);
   }
 
@@ -88,19 +90,21 @@ class Panti extends CI_Controller {
 
       $config['upload_path']   = './uploads/p/';
       $config['file_name']     = $foto;
-      $config['allowed_types'] = 'jpg|png';
+      $config['allowed_types'] = 'jpg|jpeg|png|gif';
       $config['max_size']      = 600;
 
       $this->load->library('upload', $config);
 
       if ( ! $this->upload->do_upload('foto_produk')){
-        echo $this->upload->display_errors();
-        die();
+        $this->session->set_flashdata('msg', $this->upload->display_errors());
+        $this->session->set_flashdata('type', 'error');
       }
       else {
         // jika berhasil
         $data = $this->upload->data();
         $this->panti_model->addProduk($data['file_name']);
+        $this->session->set_flashdata('msg', 'Berhasil menambahkan produk baru');
+        $this->session->set_flashdata('type', 'success');
       }
 
       redirect(site_url('in/produk'));
