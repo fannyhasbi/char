@@ -10,7 +10,7 @@ class Panti extends CI_Controller {
   public function index(){
     $this->cekLogin();
 
-    $this->load->view('panti/index_view');
+    $this->load->view('panti/dashboard');
   }
 
   public function cekLogin(){
@@ -60,7 +60,8 @@ class Panti extends CI_Controller {
 
   public function produk(){
     $this->cekLogin();
-    $this->load->view('panti/produk');
-  }
 
+    $data['view_name'] = 'produk';
+    $this->load->view('panti/index_view', $data);
+  }
 }
