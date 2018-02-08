@@ -58,4 +58,8 @@ class Panti extends CI_Controller {
     redirect(site_url('products'));
   }
 
+  public function produk(){
+    $this->load->view('panti/produk');
+  }
+
 }

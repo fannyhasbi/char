@@ -10,6 +10,7 @@ $route['products'] = 'produk';
 // Panti
 $route['in'] = 'panti';
 $route['in/signin'] = 'panti/login';
+$route['in/produk'] = 'panti/produk';
 
 $route['default_controller'] = 'home';
 $route['404_override'] = '';

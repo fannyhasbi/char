@@ -53,7 +53,7 @@
           </a>
         </li>
         <li>
-          <a href="<?= site_url('order'); ?>">
+          <a href="<?= site_url('in/order'); ?>">
             <i class="fa fa-cart-plus"></i> <span>Order</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-green">4</small>
@@ -62,12 +62,7 @@
         </li>
         <li>
           <a href="<?= site_url('in/produk'); ?>">
-            <i class="fa fa-shopping-basket"></i> <span>Produk</span>
-          </a>
-        </li>
-        <li>
-          <a href="pages/widgets.html">
-            <i class="fa fa-th"></i> <span>Widgets</span>
+            <i class="fa fa-shopping-bag"></i> <span>Produk</span>
           </a>
         </li>
       </ul>
@@ -88,7 +83,7 @@
     <section class="content">
       <!-- Info boxes -->
       <div class="row">
-        <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="col-md-4 col-sm-4 col-xs-12">
           <div class="info-box">
             <span class="info-box-icon bg-aqua"><i class="fa fa-shopping-bag"></i></span>
 
@@ -101,13 +96,26 @@
           <!-- /.info-box -->
         </div>
         <!-- /.col -->
-        <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="col-md-4 col-sm-4 col-xs-12">
           <div class="info-box">
             <span class="info-box-icon bg-green"><i class="fa fa-check-circle"></i></span>
 
             <div class="info-box-content">
               <span class="info-box-text">Terjual</span>
               <span class="info-box-number">54</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-blue"><i class="fa fa-cart-plus"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Order</span>
+              <span class="info-box-number">78</span>
             </div>
             <!-- /.info-box-content -->
           </div>
