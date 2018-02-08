@@ -71,6 +71,8 @@ class Panti extends CI_Controller {
   public function produk(){
     $this->cekLogin();
 
+    $data['produk'] = $this->panti_model->getProduk();
+
     $data['view_name'] = 'produk';
     $this->load->view('panti/index_view', $data);
   }

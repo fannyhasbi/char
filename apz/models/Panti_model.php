@@ -68,4 +68,9 @@ class Panti_model extends CI_Model {
     return $q->row();
   }
 
+  public function getProduk(){
+    $q = $this->db->get_where('produk', ['pemilik' => $this->session->userdata('id_panti')]);
+    return $q->result();
+  }
+
 }

@@ -12,82 +12,24 @@
         <table id="produk" class="table table-bordered table-hover">
           <thead>
             <tr>
-              <th>#ID</th>
+              <th>No.</th>
               <th>Nama</th>
               <th>Harga</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>1</td>
-              <td>Bunga Ungu</td>
-              <td>100.000</td>
-              <td>
-                <a href="#" class="btn btn-default" title="Edit"><i class="fa fa-edit"></i></a>
-                <a href="#" class="btn btn-danger" title="Hapus"><i class="fa fa-trash"></i></a>
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Bunga Ungu</td>
-              <td>100.000</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Bunga Ungu</td>
-              <td>100.000</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Bunga Ungu</td>
-              <td>100.000</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Bunga Ungu</td>
-              <td>100.000</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Bunga Ungu</td>
-              <td>100.000</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Bunga Ungu</td>
-              <td>100.000</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Bunga Ungu</td>
-              <td>100.000</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Bunga Ungu</td>
-              <td>100.000</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Bunga Ungu</td>
-              <td>100.000</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Bunga Ungu</td>
-              <td>100.000</td>
-              <td></td>
-            </tr>
+            <?php $i = 1; foreach($produk as $item): ?>
+              <tr>
+                <td><?= $i; ?></td>
+                <td><?= $item->nama; ?></td>
+                <td><?= number_format($item->harga, 0, ',', '.'); ?></td>
+                <td>
+                  <a href="<?= site_url('in/edit-produk/'.$item->id); ?>" class="btn btn-default" title="Edit"><i class="fa fa-edit"></i></a>
+                  <a href="#" class="btn btn-danger" title="Hapus"><i class="fa fa-trash"></i></a>
+                </td>
+              </tr>
+            <?php $i++; endforeach; ?>
           </tbody>
         </table>
       </div>
