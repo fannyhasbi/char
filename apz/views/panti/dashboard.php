@@ -31,7 +31,7 @@
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="<?= site_url(); ?>" class="logo">
       <span class="logo-mini"><b>M</b>F</span>
       <span class="logo-lg"><b>META</b>FLORIST</span>
     </a>
