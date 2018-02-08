@@ -59,6 +59,33 @@ class Panti_model extends CI_Model {
     $this->db->insert('produk', $data);
   }
 
+  public function updateProduk($id_produk, $alamat_foto_baru = NULL){
+    $deskripsi = str_replace("\n", "<br>", $this->input->post('deskripsi_produk'));
+    $slug = $this->generateSlug($this->input->post('nama_produk'));
+
+    if($alamat_foto_baru === NULL){
+      $data = array(
+        'nama' => $this->purify($this->input->post('nama_produk')),
+        'harga' => (float)$this->input->post('harga_produk'),
+        'desk' => $deskripsi,
+        'slug' => $slug
+      );
+    }
+    else {
+      $data = array(
+      'nama' => $this->purify($this->input->post('nama_produk')),
+      'harga' => (float)$this->input->post('harga_produk'),
+      'desk' => $deskripsi,
+      'foto' => $alamat_foto_baru,
+      'slug' => $slug
+    );
+    }
+
+    $this->db->where('id', $id_produk);
+
+    $this->db->update('produk', $data);
+  }
+
   public function getPanti(){
     $data = array(
       'username' => $this->purify($this->input->post('username'))
@@ -71,6 +98,16 @@ class Panti_model extends CI_Model {
   public function getProduk(){
     $q = $this->db->get_where('produk', ['pemilik' => $this->session->userdata('id_panti')]);
     return $q->result();
+  }
+
+  public function getProdukById($id){
+    $where = array(
+      'pemilik' => $this->session->userdata('id_panti'),
+      'id' => $id
+    );
+
+    $q = $this->db->get_where('produk', $where);
+    return $q->row();
   }
 
 }

@@ -115,4 +115,48 @@ class Panti extends CI_Controller {
     }
   }
 
+  public function edit_produk($id_produk){
+    if($this->input->post('edit_produk')){
+      if($this->input->post('ubahfoto')){
+        $alamat_foto = $this->generateAlamatFoto();
+
+        // jika alamat foto sudah ada di db
+        while($this->panti_model->checkFoto($alamat_foto)){
+          $foto = $this->generateAlamatFoto();
+        }
+
+        $config['upload_path']   = './uploads/p/';
+        $config['file_name']     = $alamat_foto;
+        $config['allowed_types'] = 'jpg|jpeg|png|gif';
+        $config['max_size']      = 600;
+
+        $this->load->library('upload', $config);
+
+        if ( ! $this->upload->do_upload('foto_produk')){
+          $this->session->set_flashdata('msg', $this->upload->display_errors());
+          $this->session->set_flashdata('type', 'error');
+        }
+        else {
+          // jika berhasil
+          $data = $this->upload->data();
+          $this->panti_model->updateProduk($id_produk, $data['file_name']);
+          $this->session->set_flashdata('msg', 'Berhasil mengubah produk');
+          $this->session->set_flashdata('type', 'success');
+        }
+      }
+      else {
+        $this->panti_model->updateProduk($id_produk);
+        $this->session->set_flashdata('msg', 'Berhasil mengubah produk');
+        $this->session->set_flashdata('type', 'success');
+      }
+
+      redirect(site_url('in/produk'));
+    }
+    else {
+      $data['produk'] = $this->panti_model->getProdukById($id_produk);
+      $data['view_name'] = 'edit_produk';
+      $this->load->view('panti/index_view', $data);
+    }
+  }
+
 }

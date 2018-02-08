@@ -12,6 +12,7 @@ $route['in'] = 'panti';
 $route['in/signin'] = 'panti/login';
 $route['in/produk'] = 'panti/produk';
 $route['in/tambah-produk'] = 'panti/tambah_produk';
+$route['in/edit-produk/(:num)'] = 'panti/edit_produk/$1';
 
 $route['default_controller'] = 'home';
 $route['404_override'] = '';
