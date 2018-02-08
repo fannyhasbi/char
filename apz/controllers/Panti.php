@@ -59,6 +59,7 @@ class Panti extends CI_Controller {
   }
 
   public function produk(){
+    $this->cekLogin();
     $this->load->view('panti/produk');
   }
 
