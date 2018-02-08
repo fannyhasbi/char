@@ -92,6 +92,9 @@
             </div>
 
             <div class="box-body">
+              <a href="<?= site_url('in/tambah-produk'); ?>" class="btn btn-info">+ Tambah</a>
+              <div class="clearfix"></div>
+
               <table id="produk" class="table table-bordered table-hover">
                 <thead>
                   <tr>
@@ -102,6 +105,42 @@
                   </tr>
                 </thead>
                 <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Bunga Ungu</td>
+                    <td>100.000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Bunga Ungu</td>
+                    <td>100.000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Bunga Ungu</td>
+                    <td>100.000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Bunga Ungu</td>
+                    <td>100.000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Bunga Ungu</td>
+                    <td>100.000</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Bunga Ungu</td>
+                    <td>100.000</td>
+                    <td></td>
+                  </tr>
                   <tr>
                     <td>1</td>
                     <td>Bunga Ungu</td>
@@ -165,7 +204,11 @@
 
 <script>
 $(function (){
-  $("#produk").DataTable();
+  var x = (window.innerWidth > 768) ? false : true;
+  $("#produk").DataTable({
+      "scrollX": x,
+      "pagingType": "numbers"
+  });
 });
 </script>
 </body>
