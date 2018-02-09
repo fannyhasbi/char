@@ -215,7 +215,7 @@
         <div class="col-md-12">
           <h3 class="section-title">Contact Us</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Kritik, saran, maupun pertanyaan silahkan isi pada formulir berikut.</p>
+          <p class="section-description">Kami sangat terbuka bagi siapapun yang ingin membuat Metaflorist lebih baik.</p>
         </div>
       </div>
 
@@ -229,12 +229,12 @@
 
             <div>
               <i class="fa fa-envelope"></i>
-              <p>email@contoh.me</p>
+              <p>metafloristindonesia@gmail.com</p>
             </div>
 
             <div>
               <i class="fa fa-phone"></i>
-              <p>+62 857 0000 0000</p>
+              <p>+62 857 2520 0104</p>
             </div>
 
           </div>

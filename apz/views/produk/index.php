@@ -69,11 +69,11 @@
               </span>
             </form>
             <ul class="sidebar_categories">
-              <li><a href="#">Hijau</a></li>
-              <li class="active"><a href="#">Biru</a></li>
+              <li class="active"><a href="#">Semua</a></li>
               <li><a href="#">Merah</a></li>
               <li><a href="#">Orange</a></li>
-              <li><a href="#">Ungu</a></li>
+              <li><a href="#">Kuning</a></li>
+              <li><a href="#">Putih</a></li>
             </ul>
           </div>
         </div>
@@ -96,7 +96,7 @@
                       <div class="product-item">
                         <div class="product">
                           <div class="product_image">
-                            <img src="<?= site_url('uploads/p/'.$item->foto); ?>" alt="">
+                            <img src="<?= site_url('uploads/p/'.$item->foto); ?>" alt="" class="img-responsive">
                           </div>
                           <div class="product_info">
                             <h6 class="product_name"><a href="single.html"><?= $item->nama; ?></a></h6>
