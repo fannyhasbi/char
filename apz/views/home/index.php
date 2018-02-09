@@ -18,8 +18,8 @@
   <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="">
-  <meta name="twitter:title" content="">
-  <meta name="twitter:description" content="">
+  <meta name="twitter:title" content="Metaflorist">
+  <meta name="twitter:description" content="Metaflorist. Simbol Kebahagiaan Anda">
   <meta name="twitter:image" content="">
 
   <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
@@ -49,7 +49,7 @@
           <img class="" src="<?= base_url(); ?>assets/img/metaflorist.png" alt="Metaflorist">
         </div>
 
-        <h1>Tingkatkan Percaya Diri Dengan Berbagi</h1>
+        <h1>Simbol Kebahagiaan Anda</h1>
         <!-- <h2>Kita melakukan
           <span class="rotating">pembuatan bunga</span>
         </h2> -->
@@ -90,24 +90,59 @@
         <div class="col-md-12">
           <h3 class="section-title">About Us</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Metaflorist adalah blbalbalbalalalablab balblabdlab ablabl ablabl absbal bsal</p>
         </div>
       </div>
     </div>
     <div class="container about-container wow fadeInUp">
       <div class="row">
+        <div class="col-md-6">
+          <img src="<?= site_url('assets/img/metaflorist_picture.jpg'); ?>" class="img-responsive img-rounded">
+        </div>
         <div class="col-md-6 about-content">
-          <h2 class="about-title">Kita menyediakan sarana untuk mereka</h2>
+          <h4 class="about-title">Metaflorist</h4>
           <p class="about-text">
-            Ini penjelasan tentang apa perusahaan ini. Bagaimana bisa berkembang blablab ablbalbalbalab. Ini penjelasan tentang apa perusahaan ini. Bagaimana bisa berkembang blablab ablbalbalbalab
+            Mental Healt Florist atau yang lebih dikenal dengan metaflorist merupakan florist yang menyediakan kreasi bunga hasil karya terapi kerja dari orang dengan gangguan jiwa (ODGJ) di panti rehabilitasi yang berada di magelang dan yogyakarta.
           </p>
           <p class="about-text">
-            Ini penjelasan tentang apa perusahaan ini. Bagaimana bisa berkembang blablab ablbalbalbalab. Ini penjelasan tentang apa perusahaan ini. Bagaimana bisa berkembang blablab ablbalbalbalab
-          </p>
-          <p class="about-text">
-            Ini penjelasan tentang apa perusahaan ini. Bagaimana bisa berkembang blablab ablbalbalbalab.
+            Inovasi dan kreasi bunga di arahkan oleh pengasuh panti yang merupakan lulusan pelatihan terapi kerja ODGJ yang diadakan oleh Universitas Diponegoro dalam event Ipteks Bagi Masyarakat (IbM). dr. Widodo Sarjana A.S, MKM, Sp. KJ atau yang lebih dikenal dokter spesialis psikiatri ini bekerja sama dengan Ns. Sri Padma Sari, S.Kep.,MNS. sebagai perawat kesehatan jiwa dalam memberdayakan ODGJ di Pondok Pesantren.
           </p>
         </div>
+
+        <div class="clearfix"></div>
+        <hr>
+
+        <div class="col-md-6 about-content text-right">
+          <h4 class="about-title">Pondok Pesantren Nurul Haromain Yogyakarta</h4>
+          <p class="about-text">
+            Ponpes Nurul Haromain terletak di dusun Wates Kulon Progo yang merupakan salah satu ponpes terbesar di Yogyakarta dan memiliki kurang lebih sekitar 700 santri. Ponpes ini tidak hanya menerima santri tetapi juga orang yang menderita gangguan jiwa. Gagasan itu muncul dari tahun 1995, dimana pimpinan ponpes berkeyakinan bahwa agama sangat penting bagi orang yang sakit jiwa.
+          </p>
+          <p class="about-text">
+            Ponpes ini merupakan ponpes terbesar yang menangani gangguan jiwa di Provinsi Jawa Tengah dan Yogyakarta.Saat ini, ada sekitar 130an pasien jiwa yang tinggal di ponpes dan berasal dari berbagai daerah di Pulau Jawa dan Pulau Sumatra. Para pengasuh pasien jiwa juga santri yang ada di ponpes, dengan 5 orang pengasuh putra untuk merawat 90an pasien laki-laki dan 2 orang pengasuh putri untuk merawat 40an pasien perempuan.
+          </p>
+          <p class="about-text">
+            Pengasuh panti meyakini bahwa salah satu faktor yang dapat mempengaruhi kesembuhan pasien jiwa adalah dengan berkegiatan yang bermakna (terapi kerja). Kegiatan yang paling banyak dilakukan oleh pengasuh saat ini adalah doa/ mujahadah yang merupakan kegiatan rutin pasien (Sarjana, Fitrikasari, &amp; Sari, 2015).
+          </p>
+          <p class="about-text">
+            Ketua Yayasan yang sekaligus penanggung jawab bagi pasien jiwa di ponpes Nurul Haromain menyatakan, terapi-terapi yang biasa dilakukan perawat maupun dokter di RSJ sangat diperlukan bagi kesembuhan pasien jiwa yang tinggal di ponpes dan sangat penting untuk diajarkan kepada pengasuh mengingat pengasuh pasien tidak memiliki latar belakang pendidikan kesehatan jiwa sama sekali.
+          </p>
+        </div>
+
+        <div class="clearfix"></div>
+        <hr>
+
+        <div class="col-md-6">
+          <img src="<?= site_url('assets/img/ponpes.jpg'); ?>" class="img-responsive img-rounded">
+        </div>
+        <div class="col-md-6 about-content">
+          <h4 class="about-title">Pondok Pesantren Al-Qodriyah Magelang</h4>
+          <p class="about-text">
+            Ponpes Al Qodiriyah beralamat di Dusun Bawang, Candisari, Windusari, Magelang dan berdiri sejak tahun 2005.
+          </p>
+          <p class="about-text">
+            Ponpes ini selain untuk tempat belajar santri juga menyediakan rehabilitasi untuk pasien jiwa. Ada sekitar 200 santri yang tinggal di pondok pesantren dan ada kurang lebih 20 orang dengan gangguan jiwa (pasien) yang berasal dari berbagai daerah di Jawa Tengah. Bahkan beberapa pasien merupakan pasien rujukan dari Rumah Sakit Jiwa (RSJ)Magelang ketika RSJ tidak mampu menampung pasien.
+          </p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -118,83 +153,21 @@
         <div class="col-md-12">
           <h3 class="section-title">Products</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Dengan bimbingan, mereka menghasilkan produk-produk cantik.</p>
+          <!-- <p class="section-description">Dengan bimbingan, mereka menghasilkan produk-produk cantik.</p> -->
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-3">
-          <a class="product-item" style="background-image: url(<?= base_url(); ?>uploads/p/1.jpg);" href="">
-            <div class="details">
-              <h4>Product 1</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="product-item" style="background-image: url(<?= base_url(); ?>uploads/p/3.jpg);" href="">
-            <div class="details">
-              <h4>Product 2</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="product-item" style="background-image: url(<?= base_url(); ?>uploads/p/4.jpg);" href="">
-            <div class="details">
-              <h4>Product 3</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="product-item" style="background-image: url(<?= base_url(); ?>uploads/p/5.jpg);" href="">
-            <div class="details">
-              <h4>Product 4</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="product-item" style="background-image: url(<?= base_url(); ?>uploads/p/6.jpg);" href="">
-            <div class="details">
-              <h4>Product 5</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="product-item" style="background-image: url(<?= base_url(); ?>uploads/p/7.jpg);" href="">
-            <div class="details">
-              <h4>Product 6</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="product-item" style="background-image: url(<?= base_url(); ?>uploads/p/8.jpg);" href="">
-            <div class="details">
-              <h4>Product 7</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3">
-          <a class="product-item" style="background-image: url(<?= base_url(); ?>uploads/p/1.jpg);" href="">
-            <div class="details">
-              <h4>Portfolio 8</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
+        <?php foreach($produk as $item): ?>
+          <div class="col-md-4">
+            <a class="product-item" style="background-image: url(<?= base_url('uploads/p/'.$item->foto); ?>);" href="#">
+              <div class="details">
+                <h4><?= $item->nama; ?></h4>
+                <span><?= 'Rp ' . number_format($item->harga, 0, ',', '.'); ?></span>
+              </div>
+            </a>
+          </div>
+        <?php endforeach; ?>
       </div>
 
       <div class="clearfix"></div>
@@ -213,7 +186,7 @@
         <div class="col-md-12">
           <h3 class="section-title">Testimoni</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Dengarkan para konsumen kita</p>
+          <!-- <p class="section-description">Dengarkan para konsumen kita</p> -->
         </div>
       </div>
 
@@ -221,36 +194,18 @@
         <div class="col-md-3">
           <div class="profile">
             <div class="col-xs-offset-2 col-sm-offset-0">
-              <div class="pic"><img src="https://2.bp.blogspot.com/-0FnQ5qVcVQY/V9vsOoo_EAI/AAAAAAAAGqs/wK60yj83RCsmvqNovT_r1FxH7Cn4ClO3gCLcB/s1600/Biografi%2Bdan%2BProfil%2BSri%2BMulyani%2B-%2BTokoh%2BWanita%2Bdan%2BPakar%2BEkonomi%2BIndonesia.jpg" alt=""></div>
+              <div class="pic"><img src="<?= base_url('assets/img/dini hanifa.jpg'); ?>" alt=""></div>
             </div>
-            <h4>Sri Mulyani</h4>
-            <span>Menteri Keuangan</span>
+            <h4>Dini Hanifa</h4>
+            <span>Mahasiswa</span>
           </div>
         </div>
         <div class="col-md-9">
           <div class="quote">
-            <b><img src="<?= base_url(); ?>assets/img/quote_sign_left.png" alt=""></b> Suatu kebanggaan ada kewirausahaan baru berbasiskan sociopreneur. Diharapkan semakin banyak usaha yang merangkul masyarakat dan memberikan manfaat untuk bersama. <small><img src="<?= base_url(); ?>assets/img/quote_sign_right.png" alt=""></small>
+            <b><img src="<?= base_url(); ?>assets/img/quote_sign_left.png" alt=""></b> Bunganya cukup bagus, saya gak nyangka lho ini buatan mereka. Ini mampu bersaing di pasaran. <small><img src="<?= base_url(); ?>assets/img/quote_sign_right.png" alt=""></small>
           </div>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-md-9">
-          <div class="quote">
-            <b><img src="<?= base_url(); ?>assets/img/quote_sign_left.png" alt=""></b> Suatu karya anak bangsa yang menyentuh hati. <small><img src="<?= base_url(); ?>assets/img/quote_sign_right.png" alt=""></small>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="profile">
-            <div class="col-xs-offset-2 col-sm-offset-0">
-              <div class="pic"><img src="https://upload.wikimedia.org/wikipedia/id/f/f5/Trade-Minister_Enggartiasto_Lukita.jpg" alt=""></div>
-            </div>
-            <h4>Enggartiasto Lukita</h4>
-            <span>Menteri Perdagangan</span>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 
@@ -295,11 +250,11 @@
               </div>
 
               <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" />
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email" />
               </div>
               
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" />
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subjek" />
                 <div class="validation"></div>
               </div>
               

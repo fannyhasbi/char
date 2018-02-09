@@ -6,6 +6,7 @@ $route['signout'] = 'panti/logout';
 
 // Products
 $route['products'] = 'produk';
+$route['products/(:num)'] = 'produk';
 
 // Panti
 $route['in'] = 'panti';

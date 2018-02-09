@@ -90,29 +90,38 @@
                 
                 <!-- Product Grid -->
                 <div class="product-grid">
+                  <?php if($results){ ?>
+                    <?php foreach($results as $item): ?>
 
-                  <?php foreach($produk as $item): ?>
-
-                    <div class="product-item men">
-                      <div class="product">
-                        <div class="product_image">
-                          <img src="<?= site_url('uploads/p/'.$item->foto); ?>" alt="Metaflorist <?= $item->nama; ?>">
+                      <div class="product-item">
+                        <div class="product">
+                          <div class="product_image">
+                            <img src="<?= site_url('uploads/p/'.$item->foto); ?>" alt="">
+                          </div>
+                          <div class="product_info">
+                            <h6 class="product_name"><a href="single.html"><?= $item->nama; ?></a></h6>
+                            <div class="product_price"><?= 'Rp ' . number_format($item->harga, 0, ',', '.'); ?></div>
+                          </div>
                         </div>
-                        <div class="product_info">
-                          <h6 class="product_name"><a href="single.html"><?= $item->nama; ?></a></h6>
-                          <div class="product_price"><?= number_format($item->harga, 0, ',', '.'); ?></div>
-                        </div>
+                        <div class="blue_button add_to_cart_button"><a href="#">tambah ke keranjang</a></div>
                       </div>
-                      <div class="blue_button add_to_cart_button"><a href="#">tambah ke keranjang</a></div>
+
+                    <?php endforeach; ?>
+                  <?php } else { ?>
+                    <div class="text-warning text-center">
+                      <i class="fa fa-bell"></i> Belum ada produk
                     </div>
-
-                  <?php endforeach; ?>
-
+                  <?php } ?>
                 </div>
 
                 <!-- Product Sorting -->
 
-                <div class="product_sorting_container product_sorting_container_bottom clearfix">
+                <?php if(isset($links)){ ?>
+                  <?php echo $links; ?>
+                <?php } ?>
+
+
+                <!-- <div class="product_sorting_container product_sorting_container_bottom clearfix">
                   <span class="showing_results">Showing 1–3 of 12 results</span>
                   <div class="pages d-flex flex-row align-items-center">
                     <div class="page_current">
@@ -126,8 +135,7 @@
                     <div class="page_total"><span>of</span> 3</div>
                     <div id="next_page_1" class="page_next"><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
                   </div>
-
-                </div>
+                </div> -->
 
               </div>
             </div>

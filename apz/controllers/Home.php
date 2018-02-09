@@ -23,7 +23,9 @@ class Home extends CI_Controller {
   }
 
   public function index(){
-    $this->load->view('home/index');
+    $q = $this->db->query("SELECT * FROM produk ORDER BY id DESC LIMIT 6");
+    $data['produk'] = $q->result();
+    $this->load->view('home/index', $data);
   }
 
   public function daftar(){

@@ -5,10 +5,23 @@ class Produk extends CI_Controller {
   public function __construct(){
     parent::__construct();
     $this->load->model('produk_model');
+    $this->load->library('pagination');
   }
 
   public function index(){
-    $data['produk'] = $this->produk_model->getProduk();
+    $config = array();
+    $config['base_url'] = base_url() . 'products';
+    $config['total_rows'] = $this->produk_model->record_count();
+    $config['per_page'] = 12;
+    $config['uri_segment'] = 2;
+
+    $this->pagination->initialize($config);
+
+    $page = ($this->uri->segment(2)) ? $this->uri->segment(2) : 0;
+
+    $data['results'] = $this->produk_model->fetch_produk($config['per_page'], $page);
+    $data['links'] = $this->pagination->create_links();
+
     $this->load->view('produk/index', $data);
   }
 
