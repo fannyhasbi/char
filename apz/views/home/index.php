@@ -147,6 +147,20 @@
     </div>
   </section>
 
+  <section id="subscribe">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-8">
+          <h3 class="subscribe-title">Jadi Bagian Dari Kami</h3>
+          <p class="subscribe-text">Ikut bersama kami mengembangkan rasa percaya diri Orang Dengan Gangguan Jiwa dengan memberikan pelatihan.</p>
+        </div>
+        <div class="col-md-4 subscribe-btn-container">
+          <a class="subscribe-btn" href="<?= site_url('signup'); ?>">Daftar Sekarang</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="product">
     <div class="container wow fadeInUp">
       <div class="row">
@@ -160,7 +174,7 @@
       <div class="row">
         <?php foreach($produk as $item): ?>
           <div class="col-md-4">
-            <a class="product-item" style="background-image: url(<?= base_url('uploads/p/'.$item->foto); ?>);" href="#">
+            <a class="product-item" style="background-image: url(<?= base_url('uploads/p/'.$item->foto); ?>);" href="<?= site_url('products'); ?>">
               <div class="details">
                 <h4><?= $item->nama; ?></h4>
                 <span><?= 'Rp ' . number_format($item->harga, 0, ',', '.'); ?></span>
@@ -300,5 +314,25 @@
 
   <!-- Template Specisifc Custom Javascript File -->
   <script src="<?= base_url(); ?>assets/js/custom.js"></script>
+
+  <!-- Sweet Alert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <script>
+  const message = "<?= isset($message) ? $message : null ?>";
+  const type = "<?= isset($type) ? $type : null ?>";
+  
+  var title;
+
+  switch(type){
+    case "success": title = "Berhasil"; break;
+    case "error"  : title = "Terjadi kesalahan"; break;
+    case "info"   : title = "Oops"; break;
+  }
+
+  if(message.length > 0){
+    swal(title, message, type);
+  }
+  </script>
 </body>
 </html>

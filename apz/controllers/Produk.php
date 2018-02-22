@@ -6,6 +6,22 @@ class Produk extends CI_Controller {
     parent::__construct();
     $this->load->model('produk_model');
     $this->load->library('pagination');
+    $this->cekSession();
+  }
+
+  //cek apakah session sudah ada
+  private function cekSession(){
+    if(!$this->session->userdata('id_session'))
+      $this->session->set_userdata(array('id_session' => $this->generateSession()));
+  }
+
+  private function generateSession(){
+    $h = "";
+    $k = "1234567890qwertyuiopasdfghjklzxcvbnm";
+    for ($i=1; $i <= 40; $i++) { 
+      $h .= $k[rand(0, strlen($k) - 1)];
+    }
+    return $h;
   }
 
   public function index(){

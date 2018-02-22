@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Imperial Boootstrap Template</title>
+  <title>Daftar | Metaflorist</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <!-- Google Fonts -->
@@ -20,9 +20,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">Sign Up <a href="<?= site_url(); ?>">Metaflorist</a></h3>
+          <h3 class="section-title">Jadi bagian dari <a href="<?= site_url(); ?>">Metaflorist</a></h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Sudah punya akun? Silahkan masuk <a href="<?= site_url('signin'); ?>">disini</a></p>
         </div>
       </div>
 
@@ -31,7 +30,11 @@
           <div class="form">
             <form action="" method="post" role="form">
               <div class="form-group">
-                <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama Lengkap" required>
+                <input type="text" name="nama_depan" class="form-control" id="nama_depan" placeholder="Nama Depan" required autofocus>
+              </div>
+
+              <div class="form-group">
+                <input type="text" name="nama_blkg" class="form-control" id="nama_blkg" placeholder="Nama Belakang" required>
               </div>
 
               <div class="form-group">
@@ -39,15 +42,11 @@
               </div>
 
               <div class="form-group">
-                <input type="password" name="password" class="form-control" id="password" placeholder="Passowrd" required>
-              </div>
-              
-              <div class="form-group">
-                <input type="password" name="password2" class="form-control" id="password2" placeholder="Ulangi Password" required>
+                <input type="text" name="domisili" class="form-control" id="domisili" placeholder="Kota Domisili" required>
               </div>
               
               <div class="text-center">
-                <input type="submit" name="daftar" value="Sign Up">
+                <input type="submit" name="daftar" value="Daftar">
               </div>
             </form>
           </div>
